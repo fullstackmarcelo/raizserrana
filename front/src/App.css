@@ -1,0 +1,12 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background: rgb(115,213,112);
+  background: linear-gradient(205deg, rgba(115,213,112,0.3379552504595589) 0%, rgba(0,255,134,1) 100%);
+ }
+
+ .holder{
+  max-width: 960px;
+  margin: 0 auto;
+}

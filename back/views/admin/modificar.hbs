@@ -1,0 +1,34 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>MODIFICACION DE HIERBA</h4>
+            <form action="/admin/hierbas/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{hierba.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" value="{{hierba.nombre}}" name="nombre">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Descripcion" name="descripcion">{{hierba.descripcion}}</textarea>
+                </div>
+                <div class="form-group">
+                    <p><label>Imagen<input type="file" name="picture" id="picture"></label></p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="picture_delete" id="picture_delete" value="1">
+                            Borrar Imagen Actual ?
+                        </label>
+                        <input type="hidden" name="picture_original" id="picture_original" value="{{hierba.picture}}">
+                    </p>
+
+                
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+                <h5>{{message}}</h5>
+            {{/if}}
+        </div>
+    </div>
+
+</div>

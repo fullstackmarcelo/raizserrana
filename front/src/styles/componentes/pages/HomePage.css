@@ -1,0 +1,25 @@
+main{
+    background: rgb(115,213,112);
+    background: linear-gradient(205deg, rgba(115,213,112,0.3379552504595589) 0%, rgba(0,255,134,1) 100%);
+}
+.imagenInicio{
+    display: flex;
+    max-width: 100%;
+    height: 620px;
+    object-fit: cover;
+
+}
+
+.textoInicio{
+    display: flex;
+    color: black;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.textoInicio h2{
+    font-size: 1em;
+    line-height: 1.5em;
+}

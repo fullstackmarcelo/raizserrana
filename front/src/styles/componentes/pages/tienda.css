@@ -1,0 +1,49 @@
+.contenedor-tienda{
+    display: flex;
+
+}
+
+.row-tienda{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-tienda{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* flex-basis: 100%; */
+    min-width: 0;
+    max-width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    margin-right: 3%;
+}
+
+.card-tienda-title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+.card-tienda-text {
+    margin-bottom: 0;
+}
+
+
+.img-tienda-responsive {
+    /* display: block; */
+    max-width: 100%;
+    height: 350px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
